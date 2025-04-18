@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        label{
+            color:#ccc;
+        }
+        body {
+            background-image:url("https://media.collegedekho.com/media/img/institute/crawled_images/None/Screenshot_from_2024-05-15_15-32-08.png");
+            background-size:cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color:white;
+        }
+        input {
+            width: 75%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 75%;
+        }
+        button:hover {
+            background-color: blue;
+        }
+        p {
+            margin-top: 15px;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required>
+
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" required><br><br>
+
+            <button type="submit">Login</button>
+        </form><br>
+        <label>Don't have an account? <a href="signup.html">Signup here</a></label>
+    </div>
+</body>
+</html>
